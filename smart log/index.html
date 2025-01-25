@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart log</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="home container py-5">
+        <div class="sign-up text-center w-75 m-auto p-5">
+            <h2 class="text-info mb-4 fs-1">Smart Login System</h2>
+            <div class="mb-4">
+                <input type="text" id="signUpName" placeholder="Enter your name" class=" form-control bg-transparent text-light name">
+                <div id="nameInvalid" class="danger text-danger nameValid d-none">Name should include at least 3 letters starting with capital, second name is optional</div>
+            </div>
+            <div class="mb-4">
+                <input type="text" id="signUpEmail" placeholder="Enter your email" class=" email form-control bg-transparent text-light">
+                <div id="emailInvalid" class="danger text-danger d-none emailValidation">Email should be as name@example.com</div>
+            </div>
+            <div class="mb-4">
+                <input type="password" id="signUpPassword" placeholder="Enter your password" type="password" class=" form-control bg-transparent text-light">
+                <div id="passwordInvalid" class="danger text-danger d-none passwordValid">you must strenth your password, from 5 to 15 characters</div>
+            </div>
+
+
+            <p id="tryAgain" class="bg-danger text-light d-none tryAgain">Fill the inputs first</p>
+            <p id="isExist" class="text-danger d-none isExist">account is exist</p>
+            <p id="cnfMsg" class="cnfMsg bg-success text-light d-none">success let go to <a href="./signIn.html" class="text-decoration-none text-light r-none signUp">Sign in</a></p>
+            <button id="btnSignUp" class="btn form-control bg-transparent text-info btn-outline-info mb-3 mt-4">Sign Up</button>
+
+            <div class="text-light">
+                you have an accoount?
+                <a href="./signIn.html" class="text-decoration-none text-light r-none signUp">Sign in</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

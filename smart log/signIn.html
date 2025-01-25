@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart log</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="home container py-5  " >
+        <div class="form-container text-center w-75 m-auto p-5 ">
+            <h2 class="text-info mb-4">Smart Login System</h2>
+            <div class="mb-4">
+                <input id="emailSignIn" type="text" placeholder="Enter Email" class=" form-control bg-transparent text-light">
+            </div>
+            <div class="mb-4">
+                <input id="passSignIn" type="password" placeholder="Enter Your Password" class="mb-5 form-control bg-transparent text-light">
+            </div>
+            <p id="fillInputs" class="text-light bg-danger rounded-3 w-50 m-auto mb-2 d-none">fill the inputs first</p>
+            <p id="inCorrect" class="text-light bg-danger rounded-3 w-50 m-auto mb-2 d-none">your email or password is incorrect</p>
+            <button id="btnSignIn" class="text-decoration-none btn form-control bg-transparent text-info btn-outline-info mb-3">login</button>
+            <div class="text-light">
+                don't have an accoount?
+                <a href="index.html" class="text-decoration-none text-light r-none">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/signIn.js"></script>
+</body>
+</html>
